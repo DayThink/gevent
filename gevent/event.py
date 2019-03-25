@@ -7,7 +7,7 @@ aevt = AsyncResult()
 
 def setter():
     # 3秒后唤醒所有在evt上等待的协程
-    print 'Wait for me'
+    print 'Wait for me 3 second'
     gevent.sleep(3)
     print "Ok, I'm done"
     # evt.set()  # 唤醒

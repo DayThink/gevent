@@ -5,14 +5,14 @@ data = local()
 
 def f1():
     data.x = 1
-    print data.x
+    print 'f1 = ', data.x
     gevent.sleep()
-    print data.x
+    print 'f1 = ', data.x
 
 def f2():
     try:
         data.x = 2
-        print data.x
+        print 'f2 = ', data.x
     except AttributeError:
         print 'x is not visible'
 

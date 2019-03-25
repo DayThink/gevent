@@ -1,9 +1,10 @@
 from greenlet import greenlet
-
+import time
 
 def test1():
     print 12
     gr2.switch()
+    # time.sleep(1)
     print 34
 
 
